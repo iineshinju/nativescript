@@ -1,0 +1,27 @@
+<Page loaded="pageLoaded" xmlns="http://www.nativescript.org/tns.xsd">
+
+    <ActionBar title="Home">
+    </ActionBar>
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <Label textWrap="true" text="Bienvenue à ce TP" color="blue"
+                loaded="showStartDialog" /> <!-- Étape 2, juste ici-->
+            <!-- Balise Label de l'étape 3 à mettre ici -->
+            <TextField keyboardType="phone" backgroundColor="deepskyblue"
+                hint="Entrez votre mail ici" color="darkblue"
+                marginBottom="10" />
+            <!-- Le changement de keybordType de l'étape 4 est pour cette balise -->
+            <Label text="Mot de passe : " color="blue" />
+            <TextField borderWidth="5" borderColor="royalblue" color="red"
+                backgroundColor="lightcyan" marginBottom="10" />
+            <!-- Ajouter les éléments de l'étape 5 ici -->
+            <Label text="Date de naissance : " color="blue" />
+            <!-- Créer l'élément de l'étape 6 ici -->
+            <Label text="Valider les données : " color="blue" />
+            <Switch checked="false" loaded="onSwitchLoaded" color="powderblue"
+                backgroundColor="cyan" offBackgroundColor="plum"
+                loaded="onSwitchLoaded" />
+            <Button text="Sauvegarder" tap="onTap"></Button>
+        </StackLayout>
+    </ScrollView>
+</Page>
